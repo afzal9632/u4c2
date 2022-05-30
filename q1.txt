@@ -1,0 +1,69 @@
+ When one class is used in another class then it is known as HAS- A relationship;
+ And when one class inherits the member of its parent class then it is called IA-A relationship.
+
+ex-HAS-A relationship
+
+Teacher.java
+package com.masai;
+
+public class Teacher{
+
+String gender = male;
+String name = xyz;
+
+public void details(){
+
+  };
+}
+
+Student.java
+Package com.masai;
+
+public class Student{
+
+Teacher d1 = new Teacher();
+
+d1.details();
+
+};
+
+ex- IS-A realationship
+
+Teacher.java
+package com.masai;
+
+public class Teacher{
+
+String gender = male;
+String name = xyz;
+
+public void details(){
+
+system.out.println(gender);
+system.out.println(name);
+  };
+}
+
+Student.java
+Package com.masai;
+
+public class Student extends Teacher{
+
+String name = pqr;
+
+details();
+
+};
+
+
+Access modifier-
+
+There are four types of access modifier
+1.Default
+2.private
+3.public
+4.protected
+
+they specifies the accessibility or scope of member in another classl
+we can change the accessibily where the member can be accessible.
+If we dont specifies the access modifier the by default it is Default.
